@@ -5,20 +5,20 @@ Welcome to Wheat Seedling Former, we will tell you how to use each module of the
 ## Installation
 To run.py files, you need to install the following libraries
 ```javascript
-conda create -n Bread3D python=3.8
-conda activate Bread3D
+conda create -n wheatformer python=3.8
+conda activate wheatformer
 pip install -r requirements.txt
 pip install -e .
 ```
-## Export .exe file
-If you wish to export a file in the.exe format, the following steps can be taken.
+## How to train a model
+If you wish to train a model, the following steps can be taken.
 ```javascript
-cd /File path/Bread3D-Measure
-pyinstaller -F Display_test.py
+cd /File path/Wheat-Seedling-Former-
+python tools/train.py {File Path}\Wheat-Seedling-Former-\configs\segformer\segformer_mit-b0_8xb1-160k_cityscapes-1024x1024.py
 ```
 
 ## Peroration
-The above represents merely the first version of the software, and suggestions will be gathered and sorted out in the future for the improvement of the software.
+We mainly added SCSA.py, asp.py, and cfpt.py to mmseg\models\decode_heads, and modified segformer_head.py.The above represents merely the first version of the software, and suggestions will be gathered and sorted out in the future for the improvement of the software.
 
 
 # AI-PheneLab
